@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,700&display=swap');
+
 //Main container class
 .container{
         margin:0px;
@@ -30,7 +33,7 @@
 .nav-menu{
         width:40%;
         float: left;
-        
+        font-family: 'Montserrat', sans-serif;
 }
 .nav-menu a{
         margin-top: 30px;
@@ -38,6 +41,11 @@
         color: black;
         text-decoration: none;
         float: left;
+        letter-spacing: var(--unnamed-character-spacing-0);
+        text-align: left;
+        font: normal normal bold 14px/18px Montserrat;
+        letter-spacing: 0px;
+        opacity: 1;
         
 }
 /*-------------------------------------- Navbar Section Ends ----------------------------------------*/
@@ -55,10 +63,12 @@
         opacity: 1;
 }
 .slider-prev{
-        width:30%;
+        width:20%;
         margin-top:400px;
+        margin-left: 50px;
         text-align: center;
         float: left;
+        transform: rotate(180deg);
 }
 
 
@@ -66,13 +76,10 @@
         
         text-align: center;
         height: 75px;
-        width:40%;
+        width:50%;
         float: left;
-        font-size: 150%;
-        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 32px/var(--unnamed-line-spacing-32) var(--unnamed-font-family-montserrat);
-        letter-spacing: var(--unnamed-character-spacing-0);
         text-align: center;
-        font: normal normal normal 32px/32px Montserrat;
+        font: normal normal normal 32px/32px Raleway;
         letter-spacing: 0px;
         color: #333333;
         opacity: 1;
@@ -81,7 +88,7 @@
 
 .slider-next{
 
-        width:30%;
+        width:20%;
         margin-top:400px;
         float: left;
         text-align: center;
@@ -92,7 +99,7 @@
 /*-------------------------------------- Services Section starts ----------------------------------------*/
 .services{
         width: 100%;
-        height:70%;
+        height:120px;
         text-align: center;
         background: #FFFFFF 0% 0% no-repeat padding-box;
         opacity: 1;
@@ -131,13 +138,45 @@
 }
 /*-------------------------------------- Services Section ends ----------------------------------------*/
 
+/*-------------------------------------- What is Ubiquity Section ends ----------------------------------------*/
+.ub{
+        height: 800px;
+        width: 100%;
+        background: #333333;
+        margin-top: 500px;
+        text-align: center;
+        color : #FFFFFF;
+}
+
+.ub img{
+        margin-top: 25px;
+}
+
+.ub p{
+        text-align: center;
+        color:#EEEEEE;
+}
+
+.ub-text{
+        margin-top: 20px;
+        
+        font: var(--unnamed-font-style-normal) normal
+         var(--unnamed-font-weight-normal) 32px/var(--unnamed-line-spacing-32) var(--unnamed-font-family-montserrat);
+        letter-spacing: var(--unnamed-character-spacing-0);
+        text-align: center;
+        font: normal normal normal 32px/32px Montserrat;
+        color: #333333;
+        opacity: 1;
+        color:#f16822;     
+}
+/*-------------------------------------- What is Ubiquity Section ends ----------------------------------------*/
 
 
 /*-------------------------------------- Latest Posts Section startss ----------------------------------------*/
 .latest-posts{
-        margin-top: 500px;
+        margin-top: 00px;
         width: 100%;
-        height:1000px;
+        height:1100px;
         text-align: center;
         background: #EEEEEE;
         text-align: center;
@@ -252,3 +291,73 @@
         float: right;
 }
 /*-------------------------------------- Footer Section endss ----------------------------------------*/
+
+
+
+/*------------------------------------------------- FONTS --------------------------------------------------------------*/
+.heading{
+        font: var(--unnamed-font-style-normal) normal 
+        var(--unnamed-font-weight-bold) var(--unnamed-font-size-48)/var(--unnamed-line-spacing-56) 
+        var(--unnamed-font-family-raleway);
+        letter-spacing: var(--unnamed-character-spacing-0-48);
+        text-align: center;
+        font: normal normal bold 48px/56px Raleway;
+        letter-spacing: 0.48px;
+        color: #333333;
+        opacity: 1;
+}
+
+.para{
+        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-32) var(--unnamed-font-family-montserrat);
+        letter-spacing: var(--unnamed-character-spacing-0);
+        text-align: center;
+        font: normal normal normal 24px/32px Montserrat;
+        letter-spacing: 0px;
+        color: #333333;
+        opacity: 1;
+}
+.s-head{
+        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-32) var(--unnamed-font-family-raleway);
+        letter-spacing: var(--unnamed-character-spacing-0);
+        text-align: center;
+        font: normal normal bold 24px/32px Raleway;
+        letter-spacing: 0px;
+        color: #333333;
+        opacity: 1;
+}
+.slider-para{
+        font: var(--unnamed-font-style-normal) normal 
+        var(--unnamed-font-weight-normal) 32px/var(--unnamed-line-spacing-32) var(--unnamed-font-family-montserrat);
+        letter-spacing: var(--unnamed-character-spacing-0);
+        text-align: center;
+        font: normal normal normal 32px/32px Montserrat;
+        letter-spacing: 0px;
+        color: #333333;
+        opacity: 1;
+}
+
+.blog{
+        font: var(--unnamed-font-style-normal) normal 
+        var(--unnamed-font-weight-600) 
+        var(--unnamed-font-size-40)/var(--unnamed-line-spacing-48) var(--unnamed-font-family-raleway);
+        letter-spacing: var(--unnamed-character-spacing-0);
+        color: var(--unnamed-color-f16822);
+        text-align: center;
+        font: normal normal 600 40px/48px Raleway;
+        letter-spacing: 0px;
+        color: #F16822;
+        opacity: 1;
+}
+
+.u{
+        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-48)/var(--unnamed-line-spacing-56) var(--unnamed-font-family-raleway);
+letter-spacing: var(--unnamed-character-spacing-0-48);
+color: var(--unnamed-color-f16822);
+text-align: center;
+font: normal normal bold 48px/56px Raleway;
+letter-spacing: 0.48px;
+color: #F16822;
+opacity: 1;
+}
+
+
