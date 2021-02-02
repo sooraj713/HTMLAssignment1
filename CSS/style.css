@@ -1,363 +1,374 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-//Main container class
+
+*{
+	margin:0px;
+	padding: 0px;
+}
+
+.container-fluid{
+	background-color: #FFFFFF;
+	max-width: 1920px;
+}
+
+nav{
+	
+    background-color: #FFFFFF;
+    position: fixed;
+	width: 100%;
+	height: 100px;
+	box-sizing: border-box;
+	
+}
 .container{
-        margin:0px;
-        padding:0px;
-        align-items: center;
-        height:100%;
-        width:100%;
+	margin: auto;
+	max-width: 800px;
+	align-content: center;
+	align-items: center;
 }
 
-/*-------------------------------------- Navbar Section Starts ----------------------------------------*/
-.nav{
-        margin-top:-10px;
-        height:10%;
-        width:100%;
-        background-color: #FFFFFF;
-        opacity:1;
-        position: fixed;
-        
+.logo{
+	margin-top: 25px;
+	width: 228px;
+	height: 50px;
+	align-content: center;
+	float: left;		
 }
 
-.nav-image{
-        margin-top:30px;
-        height:100%;
-        width:60%;
-        float: left;  
+.menu{
+	margin-top: 35px;
+	float: right;
+	max-width: 502px;
+	height: 50px;
+	align-content: center;
+}
+
+.menu a{
+	text-decoration: none;
+	padding: 10px;
+	font-family: 'Montserrat', sans-serif;
+	color: #333333;
+	font-size: 14px;
+	text-align: left;
+
+}
+
+.menu a:hover{
+	background-color: #333333;
+	color: white !important;
+}
+
+.active{
+	background-color: #F16822;
+	color: white !important;
 }
 
 
-
-.nav-menu{
-        width:40%;
-        float: left;
-        font-family: 'Montserrat', sans-serif;
-}
-.nav-menu a{
-        margin-top: 30px;
-        padding: 10px 10px;
-        color: black;
-        text-decoration: none;
-        float: left;
-        letter-spacing: var(--unnamed-character-spacing-0);
-        text-align: left;
-        font: normal normal bold 14px/18px Montserrat;
-        letter-spacing: 0px;
-        opacity: 1;
-        
-}
-/*-------------------------------------- Navbar Section Ends ----------------------------------------*/
-
-
-/*-------------------------------------- Slider Section Starts ----------------------------------------*/
 .slider{
-        
-        margin-top: 70px;
-        left: 0px;
-        width: 100%;
-        height: 750px;
-        color: black;
-        background-image: url("../images/banner.jpg");
-        opacity: 1;
-}
-.slider-prev{
-        width:20%;
-        margin-top:400px;
-        margin-left: 50px;
-        text-align: center;
-        float: left;
-        transform: rotate(180deg);
+	max-width: 1920px;
+	height: 600px;
+	background-image: url("../images/banner.jpg");
+	font-family: 'Raleway', sans-serif;
 }
 
-
-.slider-text {
-        
-        text-align: center;
-        height: 75px;
-        width:50%;
-        float: left;
-        text-align: center;
-        font: normal normal normal 32px/32px Raleway;
-        letter-spacing: 0px;
-        color: #333333;
-        opacity: 1;
-        color:#f16822;        
+.scontainer{
+	text-align: center;
+	margin: auto;
+	max-width: 800px;
+	height: 200px;
 }
 
-.slider-next{
-
-        width:20%;
-        margin-top:400px;
-        float: left;
-        text-align: center;
-}
-/*-------------------------------------- Slider Section Ends ----------------------------------------*/
-
-
-/*-------------------------------------- Services Section starts ----------------------------------------*/
-.services{
-        width: 100%;
-        height:120px;
-        text-align: center;
-        background: #FFFFFF 0% 0% no-repeat padding-box;
-        opacity: 1;
-        text-align: center;
-        font: normal normal bold 48px/56px Raleway;
-        letter-spacing: 0.48px;
-        color: #333333;
-        margin-left: 5px;
-}
-.stext{
-        text-align: center;
-        font: normal normal normal 24px/32px Montserrat;
-        letter-spacing: 0px;
-        color: #333333;
-        opacity: 1;
-        width: 100%;
-}
-
-.stype{
-        margin-top: 50px;
-        width:30%;
-        height:30%;
-        margin-left:40px;
-        float: left;
-}
-.stype-img{
-        background: #EEEEEE 0% 0% no-repeat padding-box;
-        width:114px;
-        height:109px;
-        text-align: center;
-        background: #EEEEEE;
-        border-radius: 100px;
-        opacity: 2;
-        margin:0px;
-        padding:0px;
-}
-/*-------------------------------------- Services Section ends ----------------------------------------*/
-
-/*-------------------------------------- What is Ubiquity Section ends ----------------------------------------*/
-.ub{
-        height: 800px;
-        width: 100%;
-        background: #333333;
-        margin-top: 500px;
-        text-align: center;
-        color : #FFFFFF;
-}
-
-.ub img{
-        margin-top: 25px;
-}
-
-.ub p{
-        text-align: center;
-        color:#EEEEEE;
-}
-
-.ub-text{
-        margin-top: 20px;
-        
-        font: var(--unnamed-font-style-normal) normal
-         var(--unnamed-font-weight-normal) 32px/var(--unnamed-line-spacing-32) var(--unnamed-font-family-montserrat);
-        letter-spacing: var(--unnamed-character-spacing-0);
-        text-align: center;
-        font: normal normal normal 32px/32px Montserrat;
-        color: #333333;
-        opacity: 1;
-        color:#f16822;     
-}
-/*-------------------------------------- What is Ubiquity Section ends ----------------------------------------*/
-
-
-/*-------------------------------------- Latest Posts Section startss ----------------------------------------*/
-.latest-posts{
-        margin-top: 00px;
-        width: 100%;
-        height:1100px;
-        text-align: center;
-        background: #EEEEEE;
-        text-align: center;
-        font: normal normal bold 48px/56px Raleway;
-        letter-spacing: 0.48px;
-        color: #333333;
-        margin-left: 5px;
-}
-.lposts{
-        width: 100%;
-        height:70%;
-        text-align: center;
-        background: #FFFFFF 0% 0% no-repeat padding-box;
-        opacity: 1;
-        text-align: center;
-        font: normal normal bold 48px/56px Raleway;
-        letter-spacing: 0.48px;
-        color: #333333;
-        margin-left: 5px;
-}
-.ltext{
-        text-align: center;
-        font: normal normal normal 24px/32px Montserrat;
-        letter-spacing: 0px;
-        color: #333333;
-        opacity: 1;
-        width: 100%;
-}
-
-.ltype{
-        margin-top: 50px;
-        width:30%;
-        height:30%;
-        margin-left:40px;
-        float: left;
-}
-
-.card{
-        width:25%;
-        height:30%;
-        text-align: center;
-        background: #FFFFFF;
-        float: left;
-        margin-left: 120px;
-        border-style: outset;
-        border: 1px solid white;
-}
-
-.ltype-img{
-        margin-top:50px;
-        width:30%;
-        height:30%;
-        text-align: center;
-        opacity: 2;
-        margin-left:50px;
-        padding:0px;
-}
-/*-------------------------------------- Latest Posts Section endss ----------------------------------------*/
-
-
-/*-------------------------------------- Footer Section startss ----------------------------------------*/
-.footer{
-        width:100%;
-        height:100%;
-        background:#333333;
-        color:#F16822;
-        float: left;
-        border: 1px solid #707070;
-}
-
-.footer-section{
-
-        float: left;
-        margin-left:200px;
-        margin-top:20px;
-        text-align: center;
-        height:80%;
-        width:20%;
-        color:#F16822;
-        letter-spacing: var(--unnamed-character-spacing-0-2);
-        text-align: left;
-        font: normal normal normal 20px/41px Montserrat;
-        letter-spacing: 0.2px;
-        opacity: 1;        
-}
-.footer-section p{
-        color:#CCCCCC;
-        
-}
-
-.social{
-        
-        background:#333333;
-        width:100%;
-        height:450px;
-        color:#CCCCCC;
-}
-
-.copy{
-        letter-spacing: var(--unnamed-character-spacing-0);
-        text-align: center;
-        width: 40%;
-        height: 200px;
-        font: normal normal medium 24px/32px Montserrat;
-        letter-spacing: 0px;
-        color: #777777;
-        opacity: 1;
-}
-.links{
-        text-align: center;
-        width: 20%;
-        float: right;
-}
-/*-------------------------------------- Footer Section endss ----------------------------------------*/
-
-
-
-/*------------------------------------------------- FONTS --------------------------------------------------------------*/
-.heading{
-        font: var(--unnamed-font-style-normal) normal 
-        var(--unnamed-font-weight-bold) var(--unnamed-font-size-48)/var(--unnamed-line-spacing-56) 
-        var(--unnamed-font-family-raleway);
-        letter-spacing: var(--unnamed-character-spacing-0-48);
-        text-align: center;
-        font: normal normal bold 48px/56px Raleway;
-        letter-spacing: 0.48px;
-        color: #333333;
-        opacity: 1;
+.slider-text{	
+	color:#F16822;
+	font-size: 50px;
+	margin-top: -80px;
+	line-height: 2;
 }
 
 .para{
-        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-32) var(--unnamed-font-family-montserrat);
-        letter-spacing: var(--unnamed-character-spacing-0);
-        text-align: center;
-        font: normal normal normal 24px/32px Montserrat;
-        letter-spacing: 0px;
-        color: #333333;
-        opacity: 1;
-}
-.s-head{
-        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-32) var(--unnamed-font-family-raleway);
-        letter-spacing: var(--unnamed-character-spacing-0);
-        text-align: center;
-        font: normal normal bold 24px/32px Raleway;
-        letter-spacing: 0px;
-        color: #333333;
-        opacity: 1;
-}
-.slider-para{
-        font: var(--unnamed-font-style-normal) normal 
-        var(--unnamed-font-weight-normal) 32px/var(--unnamed-line-spacing-32) var(--unnamed-font-family-montserrat);
-        letter-spacing: var(--unnamed-character-spacing-0);
-        text-align: center;
-        font: normal normal normal 32px/32px Montserrat;
-        letter-spacing: 0px;
-        color: #333333;
-        opacity: 1;
+	color: #333333;
+	height: 81px;
+	float: right;
+	max-width: 1048;
+	font-family: 'Montserrat',sans-serif;
+
 }
 
-.blog{
-        font: var(--unnamed-font-style-normal) normal 
-        var(--unnamed-font-weight-600) 
-        var(--unnamed-font-size-40)/var(--unnamed-line-spacing-48) var(--unnamed-font-family-raleway);
-        letter-spacing: var(--unnamed-character-spacing-0);
-        color: var(--unnamed-color-f16822);
-        text-align: center;
-        font: normal normal 600 40px/48px Raleway;
-        letter-spacing: 0px;
-        color: #F16822;
-        opacity: 1;
-}
-
-.u{
-        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-48)/var(--unnamed-line-spacing-56) var(--unnamed-font-family-raleway);
-letter-spacing: var(--unnamed-character-spacing-0-48);
-color: var(--unnamed-color-f16822);
-text-align: center;
-font: normal normal bold 48px/56px Raleway;
-letter-spacing: 0.48px;
-color: #F16822;
-opacity: 1;
+.prev-arrow{
+	max-width: 50px;
+	max-height: 50px;
+	color: #F16822;
+	margin-top: 300px;
+	margin-left: 80px;
+	display: inline-block;
+	transform: rotate(180deg);
 }
 
 
+.next-arrow{
+	max-width: 50px;
+	max-height: 50px;
+	color: #F16822;
+	margin-top: -160px;
+	margin-right: 80px;
+	display: inline-block;
+	float: right;
+}
+
+.o{
+	background-color: #F16822 !important;
+}
+
+.dot{
+	margin-top: 120px !important;
+	margin: 5px;
+	width: 5px;
+	height: 5px;
+	
+	display: inline-block;
+	align-items: center;
+	float: left;
+	background-color: #333333;
+}
+
+.m{
+	text-align: center;
+	align-content: center;
+	margin-left: 350px;
+}
+
+
+.services{
+	margin-top: 80px;
+}
+
+.service-text{
+	width: 295px;
+	height: 56px;
+	line-height: 2;
+	font-family: 'Raleway',sans-serif;
+	font-size: 40px;
+	color: #333333;
+}
+
+.dot1{
+	margin: 5px;
+	width: 5px;
+	height: 5px;
+	float: left;
+	background: #333333;
+}
+
+
+.stype{
+
+	margin-top: 20px;
+	width: 260px;
+	align-items: center;
+	height: 300px;
+	float: left;
+}
+
+
+.img-circle{
+	margin: auto;
+	height: 100px;
+	width: 100px;
+	align-items: center;
+	background-color: #EEEEEE;
+	border-radius: 100px;
+}
+
+.img-circle img{
+	margin: 20px;
+}
+
+.heading2{
+	line-height: 2;
+	width: 148px;
+	height: 29px;	
+	text-align: center;
+	margin-left: 0px;
+	font-size: 15px;
+	font-family: 'Raleway',sans-serif;
+}
+
+.para1{
+
+	width: 250px;
+	height: 98px;
+	font-size: 10px;
+	font-family: 'Montserrat',sans-serif;
+}
+
+section{
+	height: 618px;
+	margin-top: 200px;
+	background-color: #333333;
+}
+
+.heading1{
+	width: 388px;
+	height: 56px;
+	color: #F16822;
+	margin: auto;
+	font-size: 40px;
+	font-family: 'Raleway',sans-serif;
+}
+
+
+.para2{
+	float: right;
+	margin-top: 80px;
+	height: 60px;
+	max-width: 1280px;
+	color: #EEEEEE;
+	text-align: center;
+	font-size: 15px;
+	font-family: 'Montserrat',sans-serif;
+}
+
+.scontainer-img{
+	max-width: 900px;
+	text-align: center;
+	margin-left: -50px;
+}
+
+.card{
+	
+	margin:20px;
+	width: 220px;
+	align-items: center;
+	max-height: 500px;
+	float: left;
+	box-shadow: 0px 3px 6px;
+	background-color: #FFFFFF;
+}
+
+.card:hover{
+	box-shadow: 0px 5px 10px; 
+}
+
+.card-img{
+	height: 180px;
+	width: 200px;	
+	margin-top: 10px;								
+	text-align: center;
+	border: 1px solid #707070;
+}
+
+.card-h{
+	margin: auto;
+	width: 182px;
+	height: 47px;
+	color: #F16822;
+	font-family: 'Raleway',sans-serif;
+	font-size:25px;
+	line-height: 2;
+}
+
+.card-p{
+		float: right;
+		width: 350px
+		height:67px;
+		font-size: 10px;
+		line-height: 2;
+		margin: auto;
+		font-family: 'Montserrat',sans-serif;
+}
+
+footer{
+	margin: auto;
+	max-width:1902px; 
+	margin-top: 400px;
+	background: #333333;
+	height: 300px;
+	border-bottom: 1px solid #FFFFFF;
+}
+
+.footer-link{
+	
+	margin:20px;
+	max-width: 220px;
+	align-items: center;
+	max-height: 500px;
+	float: left;
+
+}
+
+
+.footer-h{
+	margin: 30px;
+	width: 182px;
+	height: 27px;
+	color: #F16822;
+	font-family: 'Raleway',sans-serif;
+	font-size:15px;
+	line-height: 2;
+}
+
+.footer-l{
+		float: ;
+		width: 350px
+		height:67px;
+		font-size: 10px;
+		line-height: 2;
+		margin-top: 10px;
+		font-family: 'Montserrat',sans-serif;
+}
+
+.footer-l a{
+	
+	font-family: 'Montserrat',sans-serif;
+	font-size: 15px;
+	text-decoration: none;
+	color: #CCCCCC;
+	line-height: 2;
+	text-align: left;
+	white-space: 2;
+}
+
+.footer-l a:hover{
+
+		text-shadow: 1px 1px 1px; 
+	}
+
+li{
+	list-style-type: none;
+}
+
+.fcontainer{
+	text-align: center;
+	margin: auto;
+	max-width: 800px;
+	max-height: 50px;
+	background-color: #333333;.copy{
+	max-width:1902px;
+	background: #333333;
+	height: 60px;
+}
+
+}
+
+.copy{
+	margin: auto;
+	max-width:1902px;
+	margin-top: 0px;
+	background: #333333;
+	height: 60px;
+}
+
+.c{
+	text-align: left;
+	color: #777777;
+	font-family: 'Montserrat',sans-serif;
+	
+}
+
+
+.social
+{
+
+	float: right;
+}
