@@ -12,10 +12,12 @@
 	max-width: 1920px;
 }
 
-nav{
+header{
 	
     background-color: #FFFFFF;
     position: fixed;
+    top: 0px;
+    bottom: 0px;
 	width: 100%;
 	height: 100px;
 	box-sizing: border-box;
@@ -23,9 +25,8 @@ nav{
 }
 .container{
 	margin: auto;
-	max-width: 800px;
-	align-content: center;
-	align-items: center;
+	max-width: 1280px;
+	overflow: hidden;
 }
 
 .logo{
@@ -33,12 +34,14 @@ nav{
 	width: 228px;
 	height: 50px;
 	align-content: center;
-	float: left;		
+	float: left;
+		
 }
 
 .menu{
 	margin-top: 35px;
 	float: right;
+	clear: right;
 	max-width: 502px;
 	height: 50px;
 	align-content: center;
@@ -60,190 +63,243 @@ nav{
 }
 
 .active{
-	background-color: #F16822;
+	background-color: #F16822 !important;
 	color: white !important;
 }
 
 
 .slider{
+	clear: left;
+	clear: right;
 	max-width: 1920px;
-	height: 600px;
+	height: 800px;
 	background-image: url("../images/banner.jpg");
 	font-family: 'Raleway', sans-serif;
 }
 
-.scontainer{
+.sheading{
+	color: #F16822;
+	font-size:64px;
+	max-width: 636;
+	max-height: 75px;
+	margin-top: 350px;
 	text-align: center;
-	margin: auto;
-	max-width: 800px;
-	height: 200px;
 }
 
-.slider-text{	
-	color:#F16822;
-	font-size: 50px;
-	margin-top: -80px;
-	line-height: 2;
-}
-
-.para{
+.spara{
 	color: #333333;
-	height: 81px;
-	float: right;
-	max-width: 1048;
+	margin-top: 43.37px;
+	text-align: center;
+	font-size: 32px;
+	max-width: 1200px;
+	max-height: 81px;
 	font-family: 'Montserrat',sans-serif;
 
 }
 
-.prev-arrow{
+.left-arrow{
 	max-width: 50px;
 	max-height: 50px;
-	color: #F16822;
-	margin-top: 300px;
-	margin-left: 80px;
-	display: inline-block;
+	position: absolute;
+	top:495px	;
+	left:80px;
 	transform: rotate(180deg);
 }
 
 
-.next-arrow{
+.right-arrow{
 	max-width: 50px;
 	max-height: 50px;
-	color: #F16822;
-	margin-top: -160px;
-	margin-right: 80px;
-	display: inline-block;
-	float: right;
-}
+	color: #F16822;	
+	position: absolute;
+	top: 495px;
+	right: 80px;
 
-.o{
-	background-color: #F16822 !important;
-}
-
-.dot{
-	margin-top: 120px !important;
-	margin: 5px;
-	width: 5px;
-	height: 5px;
-	
-	display: inline-block;
-	align-items: center;
-	float: left;
-	background-color: #333333;
 }
 
 .m{
-	text-align: center;
-	align-content: center;
-	margin-left: 350px;
+	position: absolute;
+	top: 750px;
+	left: 885px;
 }
+
+.m1{
+	position: absolute;
+	top: 1009px;
+	left: 920px;
+	max-width: 25px;
+	max-height: 10px;
+}
+
+.m2{
+	position: absolute;
+	top: 1850px;
+	left: 920px;
+	max-width: 25px;
+	max-height: 10px;
+}
+
+.m3{
+	position: absolute;
+	top: 2650px;
+	left: 920px;
+	max-width: 25px;
+	max-height: 10px;
+}
+
+.a{
+	background-color: #FFFFFF !important;
+}
+.dot {
+  height: 10px;
+  width: 10px;
+  margin-bottom: 10px;
+  background-color: #333333;
+  display: inline-block;
+}
+
 
 
 .services{
-	margin-top: 80px;
+	max-width: 1920px;
+	max-height: 818px;
+	background-color: #FFFFFF;
+	text-align: center;
 }
 
 .service-text{
-	width: 295px;
-	height: 56px;
-	line-height: 2;
-	font-family: 'Raleway',sans-serif;
-	font-size: 40px;
-	color: #333333;
+	color: #222222;
+	font-size:64px;
+	max-height: 75px;
+	margin-top: 120px;
+	text-align: center;
+	font-family: 'Raleway';
+	font-weight: bold;
 }
 
-.dot1{
-	margin: 5px;
-	width: 5px;
-	height: 5px;
-	float: left;
-	background: #333333;
+.wrapper-p{
+	margin-right: auto;
+	margin-left: 100px;
+	margin-top: 50px;
+}
+.wrapper {
+  max-width: 260px; 
+  max-height: 300px;
+  padding-right: 50px;
+  padding-left:  50px;
+  float: left;
 }
 
-
-.stype{
-
-	margin-top: 20px;
-	width: 260px;
-	align-items: center;
-	height: 300px;
-	float: left;
-}
 
 
 .img-circle{
 	margin: auto;
-	height: 100px;
-	width: 100px;
+	max-height: 125px;
+	max-width: 105px;
 	align-items: center;
 	background-color: #EEEEEE;
-	border-radius: 100px;
+	border-radius: 125px;
 }
 
 .img-circle img{
 	margin: 20px;
+	max-height: 50px;
+	max-width: 50px;
 }
 
 .heading2{
-	line-height: 2;
-	width: 148px;
-	height: 29px;	
+	line-height: 3;
+	max-width: 148px;
+	max-height: 29px;	
 	text-align: center;
-	margin-left: 0px;
-	font-size: 15px;
-	font-family: 'Raleway',sans-serif;
+	font-size: 24px;
+	font-family: 'Raleway';
 }
 
-.para1{
-
-	width: 250px;
-	height: 98px;
-	font-size: 10px;
+.spara{
+	max-width: 1280px;
+	max-height: 98px;
+	font-size: 24px;
 	font-family: 'Montserrat',sans-serif;
 }
 
-section{
-	height: 618px;
+.spara1{
+	max-width: 317px;
+	max-height: 98px;
+	font-size: 16px;
+	font-family: 'Montserrat';
+}
+
+.ubi{
+	max-height: 863px;
 	margin-top: 200px;
+	max-width: 1920px;
 	background-color: #333333;
 }
 
-.heading1{
-	width: 388px;
-	height: 56px;
+.uheading{
 	color: #F16822;
-	margin: auto;
-	font-size: 40px;
-	font-family: 'Raleway',sans-serif;
+	font-size:48px;
+	font-family: 'Raleway';
+	max-width: 636;
+	max-height: 75px;
+	margin-top: 120px;
+	text-align: center;
 }
 
-
-.para2{
-	float: right;
-	margin-top: 80px;
-	height: 60px;
+.upara{
+	margin-top: 100px;
 	max-width: 1280px;
+	max-height: 61px;
 	color: #EEEEEE;
 	text-align: center;
-	font-size: 15px;
-	font-family: 'Montserrat',sans-serif;
+	font-size: 24px;
+	font-family: 'Montserrat';
 }
 
-.scontainer-img{
-	max-width: 900px;
+.uimg{
+	max-width:874px;
+	max-height: 508px;
+
+}
+
+.lpost{
+	max-width: 1920px;
+	max-height: 1043px;
+	background-color: #F9F9F9;
+}
+
+.lheading{
+	margin-top: 100px !important;
+	max-width: 400px;
+	max-height: 56px;
+	font-size: 48px;
+	font-weight: bold;
+	color: #333333;
+	font-family: 'Raleway';
 	text-align: center;
-	margin-left: -50px;
+	margin: auto;
+}
+
+.lpara{
+	margin-top: 50px;
+	max-width: 1280px;
+	max-height: 200px;
+	font-size: 24px;
+	text-align: center;
+	font-family: 'Montserrat';
+	color: #333333;
 }
 
 .card{
 	
 	margin:20px;
-	width: 220px;
-	align-items: center;
-	max-height: 500px;
+	max-width: 350px;
+	max-height: 533px;
 	float: left;
-	box-shadow: 0px 3px 6px;
+	box-shadow: 0px 3px 6px #00000029;
 	background-color: #FFFFFF;
+	padding: 10px;
 }
 
 .card:hover{
@@ -251,124 +307,98 @@ section{
 }
 
 .card-img{
-	height: 180px;
-	width: 200px;	
-	margin-top: 10px;								
 	text-align: center;
+	max-height: 300px;
+	max-width: 350px;									
 	border: 1px solid #707070;
 }
 
 .card-h{
-	margin: auto;
-	width: 182px;
-	height: 47px;
+	margin-top: 42px;
+	text-align: center;
+	max-width: 400px;
+	max-height: 47px;
 	color: #F16822;
 	font-family: 'Raleway',sans-serif;
-	font-size:25px;
-	line-height: 2;
+	font-size:40px;
 }
 
 .card-p{
-		float: right;
-		width: 350px
-		height:67px;
-		font-size: 10px;
-		line-height: 2;
-		margin: auto;
+		
+		margin-top:29px;
+		max-width: 350px;
+		max-height:67px;
+		font-size: 16px;
+		text-align:center;
 		font-family: 'Montserrat',sans-serif;
 }
 
-footer{
-	margin: auto;
-	max-width:1902px; 
-	margin-top: 400px;
-	background: #333333;
-	height: 300px;
-	border-bottom: 1px solid #FFFFFF;
+.footer{
+	max-width:1920px;
+	max-height: 577px;
+	background-color: #333333;
+	border-bottom: 1px solid #777777;
 }
 
-.footer-link{
-	
-	margin:20px;
-	max-width: 220px;
-	align-items: center;
-	max-height: 500px;
-	float: left;
-
-}
-
-
-.footer-h{
-	margin: 30px;
-	width: 182px;
-	height: 27px;
+.fheader{
+	margin-top: 50px;
+	max-width: 500px;
+	max-height: 29px;
 	color: #F16822;
-	font-family: 'Raleway',sans-serif;
-	font-size:15px;
-	line-height: 2;
+	font-family: 'Raleway';
+	font-size: 24px;
 }
 
-.footer-l{
-		float: ;
-		width: 350px
-		height:67px;
-		font-size: 10px;
-		line-height: 2;
-		margin-top: 10px;
-		font-family: 'Montserrat',sans-serif;
+.flinks{
+	margin-left: 10px;
+	margin-top: 20px;
+	max-width: 300px;
+	max-height: 212px;
 }
 
-.footer-l a{
-	
-	font-family: 'Montserrat',sans-serif;
-	font-size: 15px;
+.flinks a{
 	text-decoration: none;
+	font-size: 20px;
+	font-family: 'Montserrat';
 	color: #CCCCCC;
-	line-height: 2;
-	text-align: left;
-	white-space: 2;
 }
 
-.footer-l a:hover{
-
-		text-shadow: 1px 1px 1px; 
-	}
+.flinks a:hover{
+	color: green;
+}
 
 li{
+	text-decoration: none;
+	font-size: 20px;
+	font-family: 'Montserrat';
+	color: #CCCCCC;
+}
+
+.flinks li{
+	padding: 5px;
 	list-style-type: none;
 }
 
-.fcontainer{
-	text-align: center;
+.l1{
+	float: left;
 	margin: auto;
-	max-width: 800px;
-	max-height: 50px;
-	background-color: #333333;.copy{
-	max-width:1902px;
-	background: #333333;
-	height: 60px;
+	padding:60px;
 }
 
+.copytext{
+	clear: both;
+	max-width: 200px;
+	max-height: 29px;
+	font-size: 24px;
+	color: #777777;
+	font-family: 'Montserrat';
 }
 
 .copy{
-	margin: auto;
-	max-width:1902px;
-	margin-top: 0px;
-	background: #333333;
-	height: 60px;
+	background-color: #333333;
 }
-
-.c{
-	text-align: left;
-	color: #777777;
-	font-family: 'Montserrat',sans-serif;
-	
-}
-
-
-.social
-{
-
+.social{
+	margin-top: 10px;
 	float: right;
+	clear: both;
 }
